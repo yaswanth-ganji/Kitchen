@@ -42,7 +42,7 @@ const Fooditemindividual = () => {
   if (x.includes(Params.id)) {
     addBtn = (
       <div className="AddSpanDiv">
-        <img src={payment} width={40} height={30} alt="" />
+        <img src={payment} width={30} height={23} alt="" />
         <span className="AddedSpan">Added </span>
       </div>
     );
