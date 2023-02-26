@@ -75,8 +75,8 @@ const Fooditemindividual = () => {
           <div className="foodItemIndividual1">
             <img
               src={useData.image_url}
-              width={600}
-              height={400}
+              width={450}
+              height={300}
               alt=""
               className="MainImgIndividual"
             />

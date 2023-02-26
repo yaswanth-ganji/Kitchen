@@ -38,8 +38,8 @@ const Fooditemdetail = ({ item }) => {
       <div className="foodItemContainer">
         <img
           src={item.image_url}
-          width={330}
-          height={220}
+          width={280}
+          height={180}
           className="foodItemImg"
           alt=""
         />
