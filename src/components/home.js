@@ -170,8 +170,8 @@ const Home = () => {
             <div className="paginationDiv">
               <img
                 src={leftArrow}
-                width={40}
-                height={30}
+                width={30}
+                height={20}
                 onClick={prevPage}
                 alt=""
               />
@@ -180,8 +180,8 @@ const Home = () => {
               </div>
               <img
                 src={rightArrow}
-                width={40}
-                height={30}
+                width={30}
+                height={20}
                 onClick={nextPage}
                 alt=""
               />
