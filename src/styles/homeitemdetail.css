@@ -1,0 +1,133 @@
+.itemDetailMainDiv {
+  background-image: url("C:\Users\gyasw\Desktop\React Main Projects\swiggy\src\icons\frame.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 344px;
+  animation: hideMe 2s forwards;
+}
+@keyframes hideMe {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.detailsDiv {
+  padding: 30px;
+}
+.itemDetailMainDiv img {
+  border-radius: 8px;
+}
+.itemDetailImgMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.itemDetailName {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 48px;
+  font-family: "Roboto";
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+.itemDetailcuisine,
+.itemDetailLocation {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.ratingimgDiv {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 7px;
+}
+
+.ratingSpan,
+.costSpan {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  font-family: "roboto";
+  margin-left: 5px;
+}
+.reviewsSpan,
+.costLabel {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "roboto";
+  color: #e2e8f0;
+}
+
+.ratingfirstDiv {
+  border-right: 1px solid #e2e8f0;
+  width: 100px;
+}
+.ratingSecDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 30px;
+}
+.foodItemDiv {
+  display: flex;
+  justify-content: center;
+  background-color: #f4f4f5;
+}
+.ratingandcostDiv {
+  display: flex;
+  justify-content: "space-between";
+
+  width: "200px";
+}
+
+@media screen and (max-width: 750px) {
+  .itemDetailImgMain {
+    width: 100vw;
+    height: 100%;
+  }
+
+  .homeItemdetailImg {
+    width: 40%;
+    border-bottom-right-radius: 134px !important;
+    height: 90%;
+  }
+
+  .itemDetailMainDiv {
+    width: 100vw;
+    margin-top: 10px;
+  }
+  .detailsDiv {
+    padding-right: 10px;
+  }
+  .itemDetailName {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .ratingandcostDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+  }
+  .ratingSecDiv {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: "column";
+    justify-content: "center";
+  }
+}

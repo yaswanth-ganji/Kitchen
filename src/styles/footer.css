@@ -1,0 +1,43 @@
+.Footer {
+  background-color: #0f172a;
+  width: 100vw;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: roboto;
+  color: #ffffff;
+}
+.Footer span {
+  color: #ffffff;
+}
+.Footer p {
+  color: #ffffff;
+}
+
+.footerLogoDiv {
+  margin: 20px;
+}
+.footerLogoDiv img {
+  margin: 10px;
+}
+
+.footerHeader {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 270px;
+  margin: 15px;
+}
+.headerLogoDiv {
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
+.footerHeader p {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 750px) {
+}

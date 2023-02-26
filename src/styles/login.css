@@ -1,0 +1,130 @@
+.loginBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "roboto";
+  background-color: #e5e5e5;
+}
+
+.loginDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fefeff;
+  border-radius: 8px;
+  width: 450px;
+  height: 530px;
+  border: 1px solid #64748b;
+}
+.imgDiv img {
+  height: 100vh;
+  width: 100%;
+}
+.imgDiv {
+  width: 50%;
+}
+.loginForm {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.loginDiv input {
+  width: 360px;
+  height: 40px;
+  background-color: #e2e8f0;
+  border-radius: 2px;
+  margin: 10px;
+  border: none;
+  outline: none;
+  color: #171f46;
+}
+
+.headingLogin {
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  color: #0f172a;
+  padding-top: 10px;
+}
+.loginDiv button {
+  width: 360px;
+  height: 45px;
+  background-color: #f7931e;
+  border-radius: 8px;
+  margin: 10px;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  margin-top: 20px;
+}
+.labelDiv {
+  width: 360px;
+}
+.loginDiv label {
+  color: #475569;
+}
+
+.heading {
+  color: #f7931e;
+  font-style: italic;
+  font-family: roboto;
+  font-size: x-large;
+  font-weight: bold;
+  margin: 0;
+  padding-top: 10px;
+}
+.errormsg {
+  color: #ef4444;
+}
+
+@media screen and (max-width: 750px) {
+  .loginBody {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .loginForm {
+    width: 100vw;
+  }
+  .loginDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    background-color: #fefeff;
+    border-radius: 8px;
+
+    height: 50vh;
+  }
+  .loginDiv input,
+  .labelDiv {
+    width: 85%;
+  }
+  .loginDiv button {
+    width: 87%;
+  }
+  .imgDiv {
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #fefeff;
+  }
+  .imgDiv img {
+    width: 80vw;
+    height: 50vh;
+    border-bottom-left-radius: 249.938px;
+    border-top-left-radius: 249.938px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .loginDiv {
+    border-radius: 0px;
+    border: none;
+  }
+}

@@ -1,0 +1,59 @@
+.payment-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f5;
+}
+.paymentDiv {
+  background-color: #ffffff;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  border: 1px solid rgba(11, 105, 255, 0.1);
+}
+.payment-p1 {
+  color: #1e293b;
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  padding-top: 10px;
+}
+.payment-p2 {
+  color: #64748b;
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.paymentDiv button {
+  background: #f7931e;
+  border-radius: 8px;
+  padding: 12px 20px;
+  gap: 8px;
+  color: #ffffff;
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  border: none;
+}
+.paymentDiv button:hover {
+  background-color: #ff8800;
+}
+
+@media screen and (max-width: 750px) {
+  .paymentDiv {
+    width: 100vw;
+  }
+}

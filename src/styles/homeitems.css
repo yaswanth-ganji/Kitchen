@@ -1,0 +1,74 @@
+.homeItemMain {
+  display: flex;
+  flex-direction: row;
+  animation: hideMe 2s forwards;
+  height: 150px;
+}
+
+.homeItemMainContainer {
+  background-color: #ffffff;
+  margin: 20px !important;
+  width: 28%;
+  border-radius: 8px;
+  margin: 10px;
+}
+.homeItemMainspanDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "roboto";
+  padding-left: 12px;
+}
+
+.homeItemMainImgDiv img {
+  border-radius: 8px;
+}
+
+.itemname {
+  color: #334155;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  padding-bottom: 8px;
+}
+.itemcuisine {
+  color: #64748b;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  padding-bottom: 8px;
+}
+
+.itemRating {
+  color: #0f172a;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  margin-left: 5px;
+}
+.itemReviews {
+  color: #64748b;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+.ratingDiv {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 750px) {
+  .homeItemMain,
+  .homeItemMainContainer {
+    width: 95vw;
+  }
+  .homeItemMainspanDiv {
+    margin-left: 20px;
+  }
+  .homeItemMain {
+    height: 150px;
+  }
+}

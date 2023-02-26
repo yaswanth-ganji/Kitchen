@@ -1,0 +1,155 @@
+.homeMain {
+  background-color: #f4f4f5;
+
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.homeitemsList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  animation: hideMe 3s forwards;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+@keyframes hideMe {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.homeitemsList a {
+  text-decoration: none;
+}
+.homeListContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchbarHeader {
+  color: #183b56;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  font-family: "roboto";
+}
+.searchBarDiv input {
+  color: #64748b;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  width: 50%;
+  outline: none;
+  border: none;
+  background: #f4f4f5;
+}
+.searchBarDiv {
+  background-color: #f4f4f5;
+  width: 85%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-bottom: 1px solid #cbd2d9;
+  margin-bottom: 20px;
+}
+.searchBarForm {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+.dropDownEle {
+  color: #475569;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "roboto";
+  outline: none;
+  border: none;
+  background: #f4f4f5;
+  padding-left: 5px;
+}
+
+.loaderDiv {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeItemMain {
+  width: 26.5vw;
+  /* border: 1px solid #cbd2d9; */
+  border: 2px solid rgba(11, 105, 255, 0.1);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  border-radius: 8px;
+}
+
+.paginationDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80vw;
+}
+.paginationSubDiv {
+  color: #334155;
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+}
+.paginationDiv img:hover,
+.downArrowDiv:hover {
+  cursor: pointer;
+}
+
+.searchBtn {
+  /* border: 1px solid #475569; */
+  color: #475569;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "roboto";
+  width: 100px;
+  height: 35px;
+  border-radius: 8px;
+  border: none;
+}
+
+@media screen and (max-width: 750px) {
+  .searchBarForm {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    flex-direction: column;
+    height: 200px;
+  }
+  .searchBarDiv {
+    height: 250px;
+    margin-top: 30px;
+  }
+  .searchBarDiv input {
+    width: 100%;
+  }
+  .searchBtn,
+  .dropdownEleDiv {
+    width: 75vw;
+  }
+  .dropDownEle {
+    width: 90%;
+  }
+}

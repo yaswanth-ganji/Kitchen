@@ -1,0 +1,93 @@
+.headerDiv1 {
+  background: #ffffff;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "roboto";
+  font-size: medium;
+  width: 80%;
+}
+.headerDiv {
+  background: #ffffff;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerLogoDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerLogoDiv p {
+  margin-left: 10px;
+}
+.logoutBtn {
+  padding: 8px 20px;
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+  background: #f7931e;
+  border-radius: 8px;
+}
+.spanDiv1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 100px;
+  font-family: "roboto";
+}
+
+.spanDiv a {
+  margin: 20px;
+  font-weight: bold;
+  color: #334155;
+  text-decoration: none;
+}
+.logoutBtn:hover {
+  background-color: #ff8800;
+}
+.active {
+  color: #f7931e !important;
+}
+.barsIcon {
+  display: none;
+}
+/* .spanDiv {
+  display: none;
+} */
+.spanDivMain {
+  display: block;
+}
+.spanDivMain1 {
+  display: none;
+}
+.show {
+  display: block;
+  transition: 1s !important;
+}
+.hide {
+  display: none;
+}
+@media screen and (max-width: 750px) {
+  .barsIcon {
+    display: block;
+    margin-right: 10px;
+  }
+  .spanDivMain {
+    display: none;
+  }
+
+  .headerDiv1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "roboto";
+    width: 100vw;
+  }
+}

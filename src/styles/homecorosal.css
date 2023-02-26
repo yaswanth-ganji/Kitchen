@@ -1,0 +1,33 @@
+.CorosalDiv1 {
+  width: 83%;
+}
+
+.CorosalDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  animation: hideMe 2s forwards;
+}
+@keyframes hideMe {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 750px) {
+  .CorosalDiv {
+    width: 100vw;
+    height: 32vh;
+    padding-top: 0;
+  }
+  .CorosalDiv1 {
+    width: 100vw;
+    height: 32vh;
+  }
+  .CorosalDiv1 img {
+    height: 32vh;
+  }
+}
