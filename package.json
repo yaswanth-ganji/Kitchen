@@ -15,6 +15,7 @@
     "react-router-dom": "^6.8.1",
     "react-scripts": "5.0.1",
     "react-use-cart": "^1.13.0",
+    "vercel": "^28.16.7",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
