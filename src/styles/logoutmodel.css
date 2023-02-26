@@ -21,7 +21,7 @@
 }
 .model2 p {
   margin-bottom: 25px;
-  font-size: larger;
+  font-size: large;
   text-align: center;
   width: 90%;
 }
@@ -35,7 +35,7 @@
 }
 .btnDiv .yes {
   background: #f7931e;
-  padding: 10px 20px;
+  padding: 8px 16px;
   border: none;
   color: #ffffff;
   font-weight: 600;
@@ -47,7 +47,7 @@
 }
 
 .btnDiv .no {
-  padding: 10px 20px;
+  padding: 8px 15px;
   border: none;
   color: #334155;
   font-weight: 600;
@@ -62,7 +62,7 @@
 @media screen and (max-width: 750px) {
   .model2 {
     width: 90vw;
-    height: 30vh;
+    height: 40vh;
   }
   .model2 p {
     width: 90%;

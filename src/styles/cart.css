@@ -75,14 +75,14 @@ tr {
   margin-left: 40px;
 }
 .orderPrice {
-  width: 75%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100px;
 }
 .orderTotalPrice {
-  margin-right: 80px;
+  margin-right: 60px;
 }
 .orderPriceMain {
   width: 100%;
@@ -110,7 +110,7 @@ tr {
 .placeOrderDiv {
   display: flex;
   justify-content: flex-end;
-  width: 67%;
+  width: 73%;
 }
 .placeOrderDiv button {
   padding: 13px 25px;

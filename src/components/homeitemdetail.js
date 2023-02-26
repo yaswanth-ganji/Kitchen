@@ -11,6 +11,7 @@ import Fooditem from "./fooditems";
 import Loader from "react-loader-spinner";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import { Navigate } from "react-router-dom";
+import frame from "../icons/frame.jpg";
 const Homeitemdetail = () => {
   const params = useParams();
   const [isLoader, setIsLoader] = useState(true);
@@ -72,7 +73,10 @@ const Homeitemdetail = () => {
         </div>
       ) : (
         <div>
-          <div className="itemDetailMainDiv">
+          <div
+            className="itemDetailMainDiv"
+            style={{ backgroundImage: `url(${frame})` }}
+          >
             <div className="itemDetailImgMain">
               <img
                 src={itemDetails.image_url}
