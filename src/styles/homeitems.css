@@ -64,11 +64,12 @@
   .homeItemMain,
   .homeItemMainContainer {
     width: 95vw;
+    height: 160px !important;
   }
   .homeItemMainspanDiv {
     margin-left: 20px;
   }
-  .homeItemMain {
-    height: 150px;
+  .homeItemMainImgDiv img {
+    height: 156px;
   }
 }
