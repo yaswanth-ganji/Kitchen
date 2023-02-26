@@ -75,7 +75,8 @@
 
 .ratingfirstDiv {
   border-right: 1px solid #e2e8f0;
-  width: 100px;
+  /* width: 100px; */
+  padding-right: 30px;
 }
 .ratingSecDiv {
   display: flex;
@@ -91,7 +92,6 @@
 .ratingandcostDiv {
   display: flex;
   justify-content: "space-between";
-
   width: "200px";
 }
 
