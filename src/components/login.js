@@ -1,18 +1,27 @@
 import React from "react";
 import Cookie from "js-cookie";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/login.css";
 import LoginImg from "../icons/loginimg.jpg";
 import Applogo from "../icons/applogo.svg";
 import { Navigate } from "react-router-dom";
-// import { redirect } from "react-router-dom";
+import Loader from "react-loader-spinner";
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+
 const Login = () => {
   const navigate = useNavigate();
   const [username, setusername] = useState("");
   const [password, setpassword] = useState("");
   const [error, seterror] = useState(false);
   const [errorMsg, seterrorMsg] = useState("");
+  const [loader, setloader] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setloader(false);
+    }, 1000);
+  }, []);
+
   const onUsernameChange = (e) => {
     setusername(e.target.value);
   };
@@ -55,34 +64,40 @@ const Login = () => {
   }
   return (
     <>
-      <div className="loginBody">
-        <form className="loginForm" onSubmit={onFormSubmit}>
-          <div className="loginDiv">
-            <img src={Applogo} width={49} height={39} alt="" />
-            <p className="heading">Tasty Kitchen</p>
-
-            <p className="headingLogin">Login</p>
-
-            <div className="labelDiv">
-              <label for="userinp">USERNAME</label>
-            </div>
-
-            <input type="text" id="userinp" onChange={onUsernameChange} />
-            <div className="labelDiv">
-              <label for="passinp">PASSWORD</label>
-            </div>
-
-            <input id="passinp" type="password" onChange={onPasswordChange} />
-            <div style={{ width: "364px" }}>
-              {error && <p className="errormsg">{errorMsg}</p>}
-            </div>
-            <button>Login</button>
-          </div>
-        </form>
-        <div className="imgDiv">
-          <img src={LoginImg} alt="" />
+      {loader ? (
+        <div className="loaderDiv">
+          <Loader type="TailSpin" color="#f7931e" height={60} width={60} />
         </div>
-      </div>
+      ) : (
+        <div className="loginBody">
+          <form className="loginForm" onSubmit={onFormSubmit}>
+            <div className="loginDiv">
+              <img src={Applogo} width={49} height={39} alt="" />
+              <p className="heading">Tasty Kitchen</p>
+
+              <p className="headingLogin">Login</p>
+
+              <div className="labelDiv">
+                <label for="userinp">USERNAME</label>
+              </div>
+
+              <input type="text" id="userinp" onChange={onUsernameChange} />
+              <div className="labelDiv">
+                <label for="passinp">PASSWORD</label>
+              </div>
+
+              <input id="passinp" type="password" onChange={onPasswordChange} />
+              <div style={{ width: "364px" }}>
+                {error && <p className="errormsg">{errorMsg}</p>}
+              </div>
+              <button>Login</button>
+            </div>
+          </form>
+          <div className="imgDiv">
+            <img src={LoginImg} alt="" />
+          </div>
+        </div>
+      )}
     </>
   );
 };
