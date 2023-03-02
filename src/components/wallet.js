@@ -27,7 +27,26 @@ const Wallet = () => {
     inputDataele = "";
     setOpen(false);
   };
-
+  var amount;
+  if (balance == null) {
+    amount = (
+      <span
+        className="heading heading1"
+        style={{ paddingLeft: 4, paddingBottom: 3 }}
+      >
+        0
+      </span>
+    );
+  } else {
+    amount = (
+      <span
+        className="heading heading1"
+        style={{ paddingLeft: 4, paddingBottom: 3 }}
+      >
+        {x}
+      </span>
+    );
+  }
   useEffect(() => {
     localStorage.setItem("walletDetails", JSON.stringify(x));
   }, [x]);
@@ -41,12 +60,8 @@ const Wallet = () => {
               <span className="heading">Available Wallet Balance</span>
               <div className="balanceDiv1">
                 <span className="heading heading1">&#8377;</span>
-                <span
-                  className="heading heading1"
-                  style={{ paddingLeft: 4, paddingBottom: 3 }}
-                >
-                  {x}
-                </span>
+
+                {amount}
               </div>
             </div>
             <p className="description">
