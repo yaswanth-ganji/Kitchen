@@ -7,6 +7,7 @@ import Homeitemdetail from "./homeitemdetail";
 import Notfound from "./notfound";
 import Payment from "./payment";
 import Fooditemindividual from "./fooditemindividual";
+import Wallet from "./wallet";
 
 class Swiggy extends React.Component {
   render() {
@@ -15,7 +16,8 @@ class Swiggy extends React.Component {
         <Routes>
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/cart" element={<Cart />} />
+          <Route exact path="/Cart" element={<Cart />} />
+          <Route exact path="/Wallet" element={<Wallet />} />
           <Route exact path="/payment" element={<Payment />} />
           <Route exact path="/:id" element={<Homeitemdetail />} />
           <Route exact path="/items/:id" element={<Fooditemindividual />} />

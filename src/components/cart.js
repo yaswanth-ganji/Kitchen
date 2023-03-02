@@ -15,6 +15,7 @@ import LogoutModel from "./LogoutModel";
 import Cookie from "js-cookie";
 import delcart from "../icons/delfinal.svg";
 import { Navigate } from "react-router-dom";
+
 const Cart = () => {
   const navigate = useNavigate();
   const [Open, setOpen] = useState(false);
@@ -30,7 +31,6 @@ const Cart = () => {
     emptyCart,
   } = useCart();
   const continuePayment = () => {
-    emptyCart();
     navigate("/payment");
     setOpen(false);
   };

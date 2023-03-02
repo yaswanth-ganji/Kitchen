@@ -39,7 +39,9 @@ const Header = () => {
       <NavLink to="/Cart" className="navlink">
         Cart
       </NavLink>
-
+      <NavLink to="/Wallet" className="navlink">
+        Wallet
+      </NavLink>
       <button className="logoutBtn" onClick={logout}>
         Logout
       </button>

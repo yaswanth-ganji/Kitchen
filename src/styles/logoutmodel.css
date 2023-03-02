@@ -14,7 +14,7 @@
   justify-content: center;
   align-items: center;
   height: 45%;
-  font-family: Roboto;
+  font-family: "Roboto";
   opacity: 1;
   border: 2px solid rgba(11, 105, 255, 0.1);
   border-radius: 8px;
@@ -54,10 +54,6 @@
   border-radius: 5px;
   border: 1px solid #64748b;
 }
-/* .no:hover {
-  background-color: #ffffff;
-  border: 2px solid #ffffff;
-} */
 
 @media screen and (max-width: 750px) {
   .model2 {

@@ -42,7 +42,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  font-weight: roboto;
+  font-weight: "Roboto";
 }
 .foodItemCost {
   color: #334155;
@@ -50,7 +50,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  font-family: roboto;
+  font-family: "Roboto";
 }
 
 .foodItemRating {
@@ -59,7 +59,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
-  font-family: roboto;
+  font-family: "Roboto";
   margin-left: 5px;
 }
 .foodItemContainer button {

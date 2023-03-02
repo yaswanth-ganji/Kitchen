@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "roboto";
+  font-family: "Roboto";
   font-size: medium;
   width: 80%;
 }
@@ -40,7 +40,7 @@
   align-items: center;
   width: 100vw;
   height: 100px;
-  font-family: "roboto";
+  font-family: "Roboto";
 }
 
 .spanDiv a {
@@ -87,7 +87,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: "roboto";
+    font-family: "Roboto";
     width: 100vw;
   }
 }

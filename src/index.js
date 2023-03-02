@@ -2,6 +2,7 @@ import React from "react";
 import ReactDom from "react-dom";
 import Swiggy from "./components/swiggy";
 import { CartProvider } from "react-use-cart";
+
 class App extends React.Component {
   render() {
     return (
@@ -11,4 +12,8 @@ class App extends React.Component {
     );
   }
 }
-ReactDom.render(<App />, document.getElementById("root"));
+ReactDom.render(
+  <App />,
+
+  document.getElementById("root")
+);

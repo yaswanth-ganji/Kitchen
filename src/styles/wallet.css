@@ -1,0 +1,130 @@
+.recommendedAmount span {
+  border: 1px solid black;
+}
+.walletContainer {
+  background-color: #ffffff;
+  width: 75%;
+  padding: 30px;
+  border: 1px solid rgba(11, 105, 255, 0.1);
+}
+
+/* .walletMain {
+  background-color: white;
+} */
+.walletContainer1 {
+  background: #f4f4f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.balanceDiv {
+  display: flex;
+  justify-content: space-between;
+}
+.balanceDiv1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.balanceDiv1 span {
+  padding-bottom: 2px;
+}
+
+.balanceDivMain,
+.addMoneyDiv {
+  border-bottom: 1px solid #cbd2d9;
+  padding: 30px;
+}
+
+.balanceDivMain {
+  padding-bottom: 0;
+}
+.addMoneyDiv {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.heading {
+  color: #334155;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  padding-bottom: 8px;
+}
+.heading1 {
+  font-size: 25px;
+}
+.description {
+  color: #64748b;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  padding-bottom: 8px;
+}
+.addMoneyDiv input {
+  width: 25vw;
+  outline: none;
+  padding: 8px 10px;
+  border: 1px solid #64748b;
+}
+.addMoneyDiv1 button {
+  padding: 8px 20px;
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+  /* background: rgb(114, 197, 229); */
+  background: #f7931e;
+}
+.rupeespan {
+  border: 1px solid #64748b;
+  padding: 9.4px 15px;
+  border-right: 0px;
+  background-color: #cbd2d9;
+}
+.addMoneyDiv1 {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+.noteDiv {
+  padding: 40px 20px;
+}
+
+@media screen and (max-width: 750px) {
+  .balanceDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .walletContainer {
+    width: 100vw;
+  }
+  .addMoneyDiv1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .inputDiv {
+    width: 100%;
+  }
+  .addMoneyDiv1 input {
+    width: 78%;
+  }
+  .addMoneyDiv1 {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .addMoneyDiv1 button {
+    width: 95%;
+  }
+  .addMoneyDiv {
+    height: 220px;
+  }
+}
