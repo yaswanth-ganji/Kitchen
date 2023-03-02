@@ -68,7 +68,7 @@
   width: 25vw;
   outline: none;
   padding: 8px 10px;
-  border: 1px solid #64748b;
+  border: none;
 }
 .addMoneyDiv1 button {
   padding: 8px 20px;
@@ -78,8 +78,10 @@
   /* background: rgb(114, 197, 229); */
   background: #f7931e;
 }
-.rupeespan {
+.inputDiv {
   border: 1px solid #64748b;
+}
+.rupeespan {
   padding: 9.4px 15px;
   border-right: 0px;
   background-color: #cbd2d9;
