@@ -20,13 +20,16 @@ const Wallet = () => {
   const depositAmt = () => {
     var inputDataele = document.getElementById("addAmount").value;
     var inpdata = parseInt(inputDataele);
-    console.log(inpdata);
+
     if (inpdata > 0) {
       setx(x + inpdata);
     }
+    let resetFormEle = document.getElementById("formEle");
+    resetFormEle.reset();
     inputDataele = "";
     setOpen(false);
   };
+
   var amount;
   if (balance == null) {
     amount = (
@@ -73,7 +76,7 @@ const Wallet = () => {
             <span className="heading">Add Money to Kitchen Wallet</span>
 
             <div>
-              <form onSubmit={deposit} className="addMoneyDiv1">
+              <form onSubmit={deposit} className="addMoneyDiv1" id="formEle">
                 <div className="inputDiv">
                   <span className="rupeespan">&#8377;</span>
                   <input
