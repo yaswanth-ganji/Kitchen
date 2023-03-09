@@ -15,7 +15,6 @@ const Wallet = () => {
     if (inpdata > 0) {
       setOpen(true);
     }
-    e.target.reset();
   };
 
   const depositAmt = () => {
