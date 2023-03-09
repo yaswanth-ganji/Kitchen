@@ -58,7 +58,7 @@ const Corosal = () => {
   const Corosal = CorosalImages.map((eachItem) => {
     if (eachItem.id === 1) {
       return (
-        <div class="carousel-item active">
+        <div class="carousel-item active" data-interval="1000">
           <img
             class="d-block w-100"
             src={eachItem.image_url}

@@ -71,7 +71,7 @@ const Header = () => {
           <div className="spanDiv1">
             {spanDivContainer}
 
-            <div onClick={removeNavBar}>
+            <div onClick={removeNavBar} className="removeNavDiv">
               <FaTimes />
             </div>
           </div>

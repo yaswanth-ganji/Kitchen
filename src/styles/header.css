@@ -36,11 +36,13 @@
 }
 .spanDiv1 {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 100vw;
-  height: 100px;
   font-family: "Roboto";
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .spanDiv a {
@@ -82,12 +84,19 @@
   .spanDivMain {
     display: none;
   }
-
+  .spanDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   .headerDiv1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: "Roboto";
     width: 100vw;
+  }
+  .removeNavDiv {
+    height: 200px;
   }
 }

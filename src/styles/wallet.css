@@ -7,10 +7,6 @@
   padding: 30px;
   border: 1px solid rgba(11, 105, 255, 0.1);
 }
-
-/* .walletMain {
-  background-color: white;
-} */
 .walletContainer1 {
   background: #f4f4f5;
   display: flex;
@@ -30,13 +26,11 @@
 .balanceDiv1 span {
   padding-bottom: 2px;
 }
-
 .balanceDivMain,
 .addMoneyDiv {
   border-bottom: 1px solid #cbd2d9;
   padding: 30px;
 }
-
 .balanceDivMain {
   padding-bottom: 0;
 }
@@ -82,7 +76,7 @@
   border: 1px solid #64748b;
 }
 .rupeespan {
-  padding: 9.4px 15px;
+  padding: 9.3px 15px;
   border-right: 0px;
   background-color: #cbd2d9;
 }
