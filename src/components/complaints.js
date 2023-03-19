@@ -48,10 +48,11 @@ const Complaint = () => {
             console.log(error.text);
           }
         );
+      alert(
+        "Complaint Registered Successfully! Owner will get back to you soon."
+      );
     }
-    alert(
-      "Complaint Registered Successfully! Owner will get back to you soon."
-    );
+
     e.target.reset();
     setdata({
       userName: "",
