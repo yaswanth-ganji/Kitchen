@@ -42,6 +42,9 @@ const Header = () => {
       <NavLink to="/Wallet" className="navlink">
         Wallet
       </NavLink>
+      <NavLink to="/Complaints" className="navlink">
+        Complaints
+      </NavLink>
       <button className="logoutBtn" onClick={logout}>
         Logout
       </button>

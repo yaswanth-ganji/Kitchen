@@ -1,0 +1,60 @@
+.FormDiv {
+  background-color: #f4f4f5;
+  display: flex;
+  justify-content: center;
+}
+.formEle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65vw;
+  background-color: #f9fbfe;
+  border: 1px solid rgba(11, 105, 255, 0.1);
+}
+
+.formContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 110vh;
+  width: 40vw;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.formContent label {
+  font-weight: bold;
+}
+
+.optionalSpan {
+  color: #64748b;
+  font-size: small;
+}
+
+.formContent input,
+textarea {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #64748b;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+/* .formContent textarea {
+  outline: none;
+} */
+.formContent button {
+  padding: 8px 20px;
+  color: #ffffff;
+  font-weight: 700;
+  border: none;
+  background: #f7931e;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 750px) {
+  .formEle {
+    width: 100vw;
+  }
+  .formContent {
+    width: 80vw;
+  }
+}
