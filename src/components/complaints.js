@@ -22,11 +22,11 @@ const Complaint = () => {
     e.preventDefault();
 
     if (
-      data.userName == "" ||
-      data.email == "" ||
-      data.message == "" ||
-      data.restaurant == "" ||
-      data.item == ""
+      data.userName === "" ||
+      data.email === "" ||
+      data.message === "" ||
+      data.restaurant === "" ||
+      data.item === ""
     ) {
       console.log(data);
       seterror(true);
@@ -92,9 +92,9 @@ const Complaint = () => {
                 name="restaurant"
                 onChange={onInputChange}
               />
-              <label>Which item</label>
+              <label>Which Dish</label>
               <input
-                placeholder="Name of the Item"
+                placeholder="Name of the Dish"
                 name="item"
                 onChange={onInputChange}
               />
