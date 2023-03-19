@@ -49,6 +49,9 @@ const Complaint = () => {
           }
         );
     }
+    alert(
+      "Complaint Registered Successfully! Owner will get back to you soon."
+    );
     e.target.reset();
     setdata({
       userName: "",
@@ -100,7 +103,6 @@ const Complaint = () => {
               />
               <label>What has happened?</label>
 
-              {/* <input placeholder="Please tell us about the incident" /> */}
               <textarea
                 rows="2"
                 cols="100"
