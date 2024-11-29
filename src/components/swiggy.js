@@ -28,5 +28,5 @@ class Swiggy extends React.Component {
     );
   }
 }
-//ss
+
 export default Swiggy;
