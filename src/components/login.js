@@ -93,6 +93,7 @@ const Login = () => {
               <button>Login</button>
             </div>
           </form>
+
           <div className="imgDiv">
             <img src={LoginImg} alt="" />
           </div>
